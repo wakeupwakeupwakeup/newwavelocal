@@ -51,6 +51,9 @@
     <div class="burger-menu">
       <img src="img/icons/burger_icon.png" alt="" class="burger-icon">
     </div>
+    <div class="header_menu">
+      <img src="/wp-content/themes/newwave/img/icons/header_menu.png" alt="Menu">
+    </div>
   </header>
   <main class="main">
 

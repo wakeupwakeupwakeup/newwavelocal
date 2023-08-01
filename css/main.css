@@ -221,6 +221,10 @@ section:not(.main-section, .quiz-section, .articles-section) {
   height: 16px;
 }
 
+.header_menu {
+  display: none;
+}
+
 .header .container-item {
   margin-right: 6px;
 }
