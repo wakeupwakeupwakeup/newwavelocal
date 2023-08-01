@@ -1,0 +1,25 @@
+.page-content-wrapper p, .article-content-wrapper p {
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.page-content-wrapper strong, .article-content-wrapper strong {
+  font-weight: bold;
+}
+
+.page-content-wrapper h1, .article-content-wrapper h1 {
+  margin: 36px 0;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.page-content-wrapper img, .article-content-wrapper img {
+  border-radius: 10px;
+}
+
+.page-content-wrapper h2, .article-content-wrapper h2 {
+  margin: 40px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
