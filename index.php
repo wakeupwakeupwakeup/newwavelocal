@@ -18,15 +18,15 @@ $(document).ready(function() {
 
   $('.services-container').slick(getPagesSliderSettings());
 
-  $(".services-item").click(function() {
-  window.location = $(this).find("a").attr("href"); 
-  return false;
-  });
-
-  //$(".article-card").click(function() {
-  //  window.location = $(this).find("a").attr("href"); 
-  //  return false;
+  //$(".services-item").click(function() {
+  //window.location = $(this).find("a").attr("href"); 
+  //return false;
   //});
+
+  $(".article-card").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
 
   $("#link_footer,#quiz_footer").click(function(){
       scrollToFooter();

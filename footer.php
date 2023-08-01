@@ -34,7 +34,7 @@
             Заполните форму обратной связи, чтобы мы могли вам перезвонить, уточнить детали вашего запроса и предложить варианты организации лучшего времяпровождения
             </p>
             <div class="support-form">
-            <?php echo do_shortcode('[contact-form-7 id="202" title="Контактная форма"]') ?>
+            <?php echo do_shortcode('[contact-form-7 id="144" title="Контактная форма 1"]') ?>
             </div>
             <!--
             <form action="" class="support-form">

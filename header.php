@@ -40,7 +40,7 @@
       </ul>
     </nav>
     <div class="header-socials-container">
-      <a href="http://t.me/Manager_NewWave" class="container-item"><img src="/wp-content/themes/newwave/img/icons/tg_header_icon.png" alt="" class="socials-icon"></a>
+      <a href="https://t.me/Manager_NewWave" class="container-item"><img src="/wp-content/themes/newwave/img/icons/tg_header_icon.png" alt="" class="socials-icon"></a>
       <a href="" class="container-item"><img src="/wp-content/themes/newwave/img/icons/wa_header_icon.png" alt="" class="socials-icon"></a>
     </div>
     <div class="language">

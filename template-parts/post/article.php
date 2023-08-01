@@ -3,7 +3,7 @@
 <div class="article-wrapper">
     <div class="header">
     <div class="heading">
-        <div class="category-value">Статья</div>
+        <div class="category-text">Статья</div>
         <?php
             the_title( '<h1 class="title">', '</h1>' );
         ?>
