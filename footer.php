@@ -4,14 +4,10 @@
         <div class="support-form-container">
             <div class="request-wrapper">
                 <div class="request-container">
-                    <h2 class="title">Leave a request</h2>
-                    <p class="text">Contact us in any convenient way by phone, in messengers: WhatsApp, Telegram,
-                        Facebook or using the
-                        feedback form.</p>
-                    <div class="contacts-link-wrapper">
-                        <img src="img/icons/phone_icon.png" alt="" class="contacts-icon">
-                        <a href="" class="contacts-link">Thailand +66-99-999-9999</a>
-                    </div>
+                    <h2 class="title">Оставьте заявку</h2>
+                    <p class="text-s">Свяжитесь с нами любым удобным способом по телефону, в мессенджерах: WhatsApp, Telegram,
+                        Facebook или с помощью
+                        контактной формы.</p>
                     <div class="contacts-container">
                         <div class="contacts-link-wrapper">
                             <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
@@ -30,11 +26,10 @@
                             <p class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</p>
                         </div>
                     </div>
-                    <a href="" class="mail_link">newwave@mail.ru</a>
                 </div>
             </div>
           <div class="contacts-wrapper">
-            <h2 class="title">Customer support</h2>
+            <h2 class="title">Наши контакты</h2>
             <div class="contacts-container">
               <div class="contacts-link-wrapper">
                 <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
@@ -87,19 +82,15 @@
             </div>
             <span class="footer-text">Copyright 2023. All rights reserved.<br>Website design by MKT Team</span>
           </div>
-          <div class="footer-menu">
-            <div class="footer-menu-column">
-              <a href="/rental-of-property/" class="footer-menu-item">Аренда жилья</a>
-              <a href="/rent-a-car/" class="footer-menu-item">Аренда авто</a>
-              <a href="/transfer/" class="footer-menu-item">Трансфер</a>
-            </div>
-            <div class="footer-menu-column">
-              <a href="/documents/" class="footer-menu-item">Документы</a>
-              <a href="/tours/" class="footer-menu-item">Туры</a>
-              <a href="/about-us/" class="footer-menu-item">О Нас</a>
-            </div>
-
-
+          <div class="footer-menu-column">
+            <a href="/rental-of-property/" class="footer-menu-item">Аренда жилья</a>
+            <a href="/rent-a-car/" class="footer-menu-item">Аренда авто</a>
+            <a href="/transfer/" class="footer-menu-item">Трансфер</a>
+          </div>
+          <div class="footer-menu-column">
+            <a href="/documents/" class="footer-menu-item">Документы</a>
+            <a href="/tours/" class="footer-menu-item">Туры</a>
+            <a href="/about-us/" class="footer-menu-item">О Нас</a>
           </div>
           <div class="footer-info">
             <div class="contacts-link-wrapper">

@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <title>New Wave - организация мероприятий</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:title" content="">
     <meta property="og:type" content="">
@@ -49,11 +49,8 @@
           echo do_shortcode('[gtranslate]');
         ?>
         </div>
-        <div class="burger-menu">
-          <img src="img/icons/burger_icon.png" alt="" class="burger-icon">
-        </div>
         <div class="header_menu">
-          <img src="/wp-content/themes/newwave/img/icons/header_menu.png" alt="Menu">
+          <img src="/wp-content/themes/newwave/img/icons/burger_icon.png" alt="Menu">
         </div>
       </header>
   <main class="main">

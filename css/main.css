@@ -206,6 +206,15 @@ section:not(.main-section, .quiz-section, .articles-section) {
   margin-bottom: 24px;
 }
 
+.articles-section .text-s {
+  text-align: start;
+}
+
+.footer .text-s {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -259,9 +268,6 @@ section:not(.main-section, .quiz-section, .articles-section) {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-right: 16px;
-}
-.burger-menu {
-  display: none;
 }
 
 .main-section {
@@ -331,6 +337,7 @@ section:not(.main-section, .quiz-section, .articles-section) {
 }
 
 .main-section .services-item {
+  margin: 0 6px;
   user-select: none;
   cursor: pointer;
   width: 282px;
@@ -345,8 +352,6 @@ section:not(.main-section, .quiz-section, .articles-section) {
   border-radius: 15px;
   max-width: 282px;
 }
-
-
 
 .main-section .text-container {
   width: 174px;
@@ -380,11 +385,14 @@ section:not(.main-section, .quiz-section, .articles-section) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 64px;
 }
 
 .slider-nav {
   display: flex;
+}
+
+.offers-section .slider-title-nav {
+  margin-bottom: 64px;
 }
 
 .slider-nav-item {
@@ -491,6 +499,14 @@ section:not(.main-section, .quiz-section, .articles-section) {
 
 /*---ARTICLES---*/
 
+.article_entry {
+  width: 100%;
+}
+
+.article_title_wrapper {
+  display: none;
+}
+
 .article-wrapper {
   display: flex;
   justify-content: space-between;
@@ -525,11 +541,15 @@ section:not(.main-section, .quiz-section, .articles-section) {
   margin-left: 24px;
 }
 
-.article-content-container .title {
-  margin-bottom: 16px;
+.reviews-wrapper, .support-form-section .title, .related-articles-wrapper .title {
+  margin-bottom: 80px;
 }
 
-.article-content-container .color {
+.article-content-container .title {
+  margin-bottom: 50px;
+}
+
+.article-content-container .color, .related-articles-wrapper .color {
   color: #1e5af3;
 }
 
@@ -592,6 +612,7 @@ section:not(.main-section, .quiz-section, .articles-section) {
 
 .related-card-wrapper {
   width: 370px;
+  margin: 0 15px;
 }
 
 .related-card-img {
@@ -657,13 +678,13 @@ section:not(.main-section, .quiz-section, .articles-section) {
   justify-content: space-between;
 }
 
-.support-form-wrapper {
+.support-form-wrapper, .request-wrapper {
   width: 500px;
 }
 
 .quiz-section {
   text-align: center;
-  padding: 0;
+  padding: 128px 0;
   margin: 96px 0;
 }
 
@@ -722,7 +743,7 @@ section:not(.main-section, .quiz-section, .articles-section) {
   padding: 128px 0;
 }
 
-.support-form-section .text-s {
+.support-form-section,  .text-s {
   margin: 24px 0;
 }
 
@@ -731,9 +752,11 @@ section:not(.main-section, .quiz-section, .articles-section) {
   flex-direction: column;
 }
 
+/*
 .support-form-section .title {
   margin-bottom: 24px;
 }
+*/
 
 input, textarea {
   width: 100%;
@@ -800,8 +823,7 @@ input[type="submit"]:active {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 124px 0;
-  height: 146px;
+  height: fit-content;
   box-sizing: content-box;
 }
 
@@ -817,10 +839,6 @@ input[type="submit"]:active {
   line-height: 32px;
 }
 
-.footer-menu {
-  display: flex;
-}
-
 .footer-menu-item {
   font-weight: 300;
   margin-bottom: 40px;
@@ -829,12 +847,6 @@ input[type="submit"]:active {
 .footer-menu-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-right: 182px;
-}
-
-.footer-menu-column:last-child {
-  margin: 0;
 }
 
 .footer .contacts-link {
@@ -861,40 +873,56 @@ input[type="submit"]:active {
   margin-bottom: 16px;
 }
 
-.request-container .text {
+.text {
   font-size: 20px;
+}
+
+.learn-more-button-wrapper {
+  margin-left: auto;
+  display: flex;
+  align-items: start;
 }
 
 /* Мои */
 
-@media screen and (max-width: 1170px) {
-  .wrapper {
-    padding: 60px 32px;
+@media screen and (max-width: 1280px) {
+  .main-section>div:not(.services-container), .header, .reviews-wrapper, .articles-section, .offers-section .slider-title-nav, .footer-wrapper {
+    padding: 0 32px;
+  }
+  .support-form-section {
+    padding: 128px 32px;
+  }
+  .footer-info {
+    display: none;
+  }
+  
+  .footer-container {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-card {
+    height: 330px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .wrapper {
-    padding: 60px 0;
-  }
 
-  .title {
-    font-size: clamp(20px, 7vw, 45px);
-    font-weight: 600;
-    width: 100%;
-    letter-spacing: -1px;
+  .article_title_wrapper {
+    display: block;
+    padding: 15px;
   }
-
+  .reviews-wrapper, .support-form-section .title, .related-articles-wrapper .title {
+    margin-bottom: 60px;
+  }
   .quiz-section .title {
     font-size: 32px;
+    padding: 0 25px;
   }
 
   .quiz-section .quiz-button-wrapper {
     margin-top: 32px;
-  }
-
-  .main-section>div:not(.services-container), .header, .reviews-wrapper, .support-form-section, .articles-section, .offers-section .slider-title-nav {
-    padding: 0 32px;
   }
 
   .main-section .main-heading .title {
@@ -920,10 +948,6 @@ input[type="submit"]:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .main-section .services-item {
-    margin-right: 16px;
   }
 
   .main-section .main-subheading .subheading-description {
@@ -991,12 +1015,6 @@ input[type="submit"]:active {
     align-items: center;
   }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .footer-logo-container {
     width: auto;
   }
@@ -1005,16 +1023,12 @@ input[type="submit"]:active {
     margin-top: 16px;
   }
 
-  .footer .logo {
-    width: 268px;
-  }
-
-  .footer-menu {
+  .footer .contacts-wrapper .contacts-container {
     display: none;
   }
-
-  .footer .contacts-container {
-    display: none;
+  
+  .footer .request-wrapper .contacts-container {
+    margin: 20px;
   }
 
   .request-wrapper {
@@ -1022,7 +1036,7 @@ input[type="submit"]:active {
   }
 
   .title {
-    font-size: clamp(20px, 7vw, 45px);
+    font-size: clamp(27px, 7vw, 45px);
     font-weight: 600;
     width: 100%;
     letter-spacing: -1px;
@@ -1076,8 +1090,13 @@ input[type="submit"]:active {
   .wrapper {
     padding: 64px 0;
   }
-
-  .main-section>div:not(.services-container), .header, .reviews-wrapper {
+  .reviews-wrapper, .support-form-section .title, .related-articles-wrapper .title {
+    margin-bottom: 40px;
+  }
+  .footer-menu-column {
+    display: none;
+  }
+  .main-section>div:not(.services-container), .header {
     padding: 0 16px;
   }
 
@@ -1091,13 +1110,85 @@ input[type="submit"]:active {
     width: 100%;
     max-width: 480px;
   }
+  .support-form-wrapper {
+    width: 80%;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .footer-logo-wrapper {
+    margin: 0 auto;
+  }
+  .related-articles-wrapper .title, .reviews-section .title {
+    text-align: center;
+  }
+  .slider-title {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+
+  .main-section .services-item {
+    width: 250px;
+    min-width: 200px;
+    padding: 20px 24px;
+  }
+  .main-section .text-container {
+    margin-right: 5px;
+  }
+  .service-name {
+    font-size: 16px !important;
+  }
+  .service-icon {
+    width: 20px;
+  }
+  .service-description {
+    font-size: 14px !important;
+  }
+  .offers-section .slider-card {
+    width: 280px;
+  }
+  .related-card-wrapper {
+    width: 75vw;
+    margin: 0 10px;
+  }
+  .slick-track
+  {
+      display: flex !important;
+  }
+  .slick-slide
+  {
+      height: inherit !important;
+  }
+  .review-card {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .review-text {
+    font-size: 14px;
+  }
+  .author-name {
+    font-size: 14px;
+  }
+  .support-form-wrapper, .request-wrapper {
+    width: 100%;
+  }
+  .support-form-section {
+    padding: 80px 10px;
+  }
+  .contacts-link {
+    font-size: 16px;
+  }
+  .article_title_wrapper {
+    padding: 15px;
+  }
   .main-section {
     padding-top: 64px;
   }
-
+  .reviews-wrapper, .support-form-section .title, .related-articles-wrapper .title {
+    margin-bottom: 25px;
+  }
   .mood-selector {
     margin: 32px 0;
   }
@@ -1122,10 +1213,40 @@ input[type="submit"]:active {
   .article-wrapper .text-m {
     font-size: 16px;
   }
+  .request-wrapper .text-s, .support-form-wrapper .text-s {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .support-form-wrapper {
+    width: 90%;
+  }
 
+@media screen and (max-width: 380px) {
+  .learn-more-button {
+    font-size: 16px;
+  }
+  .learn-more-button-icon {
+    width: 15px;
+  }
+  .articles-section .text-s {
+    font-size: 16px;
+  }
+  .related-card-title {
+    font-size: 20px;
+  }
+  .footer .contacts-link {
+    font-size: 15px;
+  }
+  .footer .request-wrapper .contacts-container {
+    margin: 0;
+  }
   .support-form-wrapper {
     width: 100%;
   }
+  .contacts-icon {
+    width: 20px;
+  }
+}
 
 }
 

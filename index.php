@@ -49,36 +49,20 @@ $(document).ready(function() {
       variableWidth: true,
       infinite: true,
       arrows: false,
-      responsive: [{
-      breakpoint: 1920,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        infinite: true,
-      }
-    },
+      responsive: [
     {
-      breakpoint: 1220,
+      breakpoint: 1200, // 910
       settings: {
-        centerMode: true,
-        centerPadding: "0",
+        mobileFirst: true,
         slidesToShow: 3,
         slidesToScroll: 3
       }
     },
     {
-      breakpoint: 700,
+      breakpoint: 910,
       settings: {
+        mobileFirst: true,
         centerMode: true,
-        centerPadding: "0",
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 360,
-      settings: {
-       centerMode: true,
         centerPadding: "0",
         slidesToShow: 1,
         slidesToScroll: 1
@@ -94,19 +78,17 @@ $(document).ready(function() {
       slidesToScroll: 3,
       prevArrow: '#services_slider_left',
       nextArrow: '#services_slider_right',
-      infinite: false,
+      infinite: true,
       responsive: [{
       breakpoint: 1920,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: false,
       }
     },
     {
       breakpoint: 1220,
       settings: {
-        infinite: false,
         variableWidth: true,
         centerMode: true,
         centerPadding: "0",
@@ -117,6 +99,7 @@ $(document).ready(function() {
     {
       breakpoint: 700,
       settings: {
+        infinite: true,
         variableWidth: true,
         centerMode: true,
         centerPadding: "0",
@@ -163,29 +146,28 @@ $(document).ready(function() {
       return {
           slidesToShow: 3,
           slidesToScroll: 3,
+          infinite: true,
           speed: 350,
-          prevArrow: '#reviews_slider_left',
-          nextArrow: '#reviews_slider_right',
-          responsive: [{
-              breakpoint: 1100,
-              settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  infinite: true,
-              }
-          },
+          arrows: false,
+          responsive: [
               {
-                  breakpoint: 1050,
+                  breakpoint: 1280,
                   settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 2
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      variableWidth: true,
+                      centerMode: true,
+                      centerPadding: "0",
                   }
               },
               {
-                  breakpoint: 700,
+                  breakpoint: 460,
                   settings: {
                       slidesToShow: 1,
-                      slidesToScroll: 1
+                      slidesToScroll: 1,
+                      variableWidth: true,
+                      centerMode: true,
+                      centerPadding: "0",
                   }
               }],
       }
@@ -415,7 +397,7 @@ $(document).ready(function() {
                   <a href="/tours/" class="more-button">Узнать подробнее</a>
               </div>
               <div class="service-icon-wrapper">
-                  <img src="/wp-content/themes/newwave/img/icons/service_icon_food.png" alt="Food" class="service-icon">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_tours.png" alt="Tours" class="service-icon">
               </div>
           </div>
       </div>
@@ -464,13 +446,13 @@ $(document).ready(function() {
         </div>
     <div class="article-content-container">
       <h2 class="title"><span class="color">Откройте ворота</span><br>в экзотический мир</h2>
-      <p class="text-m">
+      <p class="text-s">
       Здесь вы найдете много интересных и полезных статей, которые помогут вам лучше понять возможности, которые предлагает Таиланд для проведения различных мероприятий. Наша команда профессионалов собирает для вас самые свежие новости и публикует информацию о последних тенденциях и популярных событиях, происходящих в этой удивительной стране.
       </p>
     </div>
   </div>
   <div class="related-articles-wrapper">
-    <h2 class="title section-title">Похожие статьи</h2>
+    <h2 class="title section-title">Похожие <span class="color">статьи</span></h2>
     <div class="related-articles-container">
       <?php
         $articles = new WP_Query(array(
