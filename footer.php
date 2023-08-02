@@ -101,7 +101,7 @@
 
 
           </div>
-          <div>
+          <div class="footer-info">
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
               <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</a>

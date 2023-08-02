@@ -197,13 +197,12 @@ section:not(.main-section, .quiz-section, .articles-section) {
 
 .text-m {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .text-s {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-  margin-top: 48px;
   margin-bottom: 24px;
 }
 
@@ -663,8 +662,6 @@ section:not(.main-section, .quiz-section, .articles-section) {
 }
 
 .quiz-section {
-  margin-top: 150px;
-  margin-bottom: 100px;
   text-align: center;
   padding: 0;
 }
@@ -738,7 +735,7 @@ section:not(.main-section, .quiz-section, .articles-section) {
 }
 
 input, textarea {
-  min-width: 100%;
+  width: 100%;
   background-color: transparent;
   padding: 20px 16px;
   border: 2px solid #4274f3;
@@ -891,7 +888,15 @@ input[type="submit"]:active {
     letter-spacing: -1px;
   }
 
-  .main-section>div:not(.services-container), .header, .reviews-wrapper {
+  .quiz-section .title {
+    font-size: 32px;
+  }
+
+  .quiz-section .quiz-button-wrapper {
+    margin-top: 32px;
+  }
+
+  .main-section>div:not(.services-container), .header, .reviews-wrapper, .support-form-section, .articles-section, .offers-section .slider-title-nav {
     padding: 0 32px;
   }
 
@@ -920,8 +925,8 @@ input[type="submit"]:active {
     justify-content: space-between;
   }
 
-  .article-content-container {
-    margin-left: 0;
+  .main-section .services-item {
+    margin-right: 16px;
   }
 
   .main-section .main-subheading .subheading-description {
@@ -934,6 +939,10 @@ input[type="submit"]:active {
     display: none;
   }
 
+  .support-form-wrapper {
+    margin-top: 94px;
+  }
+
   .mood-container {
     width: 100%;
     justify-content: space-between;
@@ -943,6 +952,11 @@ input[type="submit"]:active {
 
   .quiz-section {
     padding: 128px 0;
+  }
+
+  .article-image {
+    width: 100%;
+    margin-bottom: 24px;
   }
 
   .article-wrapper {
@@ -958,12 +972,13 @@ input[type="submit"]:active {
 
   .article-card {
     height: 300px;
+    max-width: 100%;
     width: 100%;
-    margin: 32px 0;
   }
 
   .article-content-container {
     width: 100%;
+    margin-left: 0;
   }
 
   .article-content-container .title {
@@ -1050,6 +1065,10 @@ input[type="submit"]:active {
     font-size: max(12px, 2vw);
     margin-top: 16px;
   }
+
+  .footer-info {
+    display: none;
+  }
 }
   
 @media screen and (max-width: 768px) {
@@ -1074,8 +1093,37 @@ input[type="submit"]:active {
 }
 
 @media screen and (max-width: 480px) {
+  .main-section {
+    padding-top: 64px;
+  }
 
-  .
+  .mood-selector {
+    margin: 32px 0;
+  }
+
+  .mood-img {
+    width: 24px;
+  }
+
+  .main-section .main-subheading .subheading-description {
+    margin-top: 8px;
+  }
+
+  .quiz-section {
+    padding: 64px 16px;
+  }
+
+  .quiz-section .title {
+    font-size: 18px;
+  }
+
+  .article-wrapper .text-m {
+    font-size: 16px;
+  }
+
+  .support-form-wrapper {
+    width: 100%;
+  }
 
 }
 

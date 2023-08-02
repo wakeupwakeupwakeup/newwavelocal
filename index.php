@@ -446,24 +446,21 @@ $(document).ready(function() {
 </section>
 <section class="articles-section">
     <div class="article-wrapper">
-        <div class="article-image-wrapper">
-            <div class="article-image">
-	            <?php
-	            $latest_post_ids = [];
-	            $articles = new WP_Query(array(
-		            'category_name' => 'articles',
-		            'posts_per_page' => 1,
-	            ));
-	            if ($articles->have_posts()) {
-		            while ($articles->have_posts()) {
-			            array_push($latest_post_ids, get_the_ID());
-			            $articles->the_post();
-			            get_template_part('template-parts/post/article-card');
-		            }
-	            }
-	            ?>
-            </div>
-
+        <div class="article-image">
+            <?php
+            $latest_post_ids = [];
+            $articles = new WP_Query(array(
+                'category_name' => 'articles',
+                'posts_per_page' => 1,
+            ));
+            if ($articles->have_posts()) {
+                while ($articles->have_posts()) {
+                    array_push($latest_post_ids, get_the_ID());
+                    $articles->the_post();
+                    get_template_part('template-parts/post/article-card');
+                }
+            }
+            ?>
         </div>
     <div class="article-content-container">
       <h2 class="title"><span class="color">Откройте ворота</span><br>в экзотический мир</h2>
