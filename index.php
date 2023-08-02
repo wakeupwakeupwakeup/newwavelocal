@@ -18,6 +18,8 @@ $(document).ready(function() {
 
   $('.services-container').slick(getPagesSliderSettings());
 
+  $('.related-articles-container').slick(getRelatedArticlesSliderSettings());
+
   //$(".services-item").click(function() {
   //window.location = $(this).find("a").attr("href"); 
   //return false;
@@ -92,18 +94,19 @@ $(document).ready(function() {
       slidesToScroll: 3,
       prevArrow: '#services_slider_left',
       nextArrow: '#services_slider_right',
-      infinite: true,
+      infinite: false,
       responsive: [{
       breakpoint: 1920,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
+        infinite: false,
       }
     },
     {
       breakpoint: 1220,
       settings: {
+        infinite: false,
         variableWidth: true,
         centerMode: true,
         centerPadding: "0",
@@ -154,6 +157,38 @@ $(document).ready(function() {
       }
     }],
     }
+  }
+
+  function getRelatedArticlesSliderSettings() {
+      return {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          speed: 350,
+          prevArrow: '#reviews_slider_left',
+          nextArrow: '#reviews_slider_right',
+          responsive: [{
+              breakpoint: 1100,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+              }
+          },
+              {
+                  breakpoint: 1050,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 700,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }],
+      }
   }
 
   function updateServices(cur_mood) {
@@ -336,45 +371,53 @@ $(document).ready(function() {
     </p>
   </div>
   <div class="services-container">
-      <div class="services-item">
-        <div class="text-container">
-          <h4 class="service-name">Аренда жилья</h4>
-          <p class="service-description">Мы подберем для вас жилье на любой вкус и кошелек</p>
-          <a href="/rental-of-property/" class="more-button">Узнать подробнее</a>
-        </div>
-        <div class="service-icon-wrapper">
-          <img src="/wp-content/themes/newwave/img/icons/service_icon_housing.png" alt="Rental Housing" class="service-icon">
-        </div>
+      <div class="services-item-wrapper">
+          <div class="services-item">
+              <div class="text-container">
+                  <h4 class="service-name">Аренда жилья</h4>
+                  <p class="service-description">Мы подберем для вас жилье на любой вкус и кошелек</p>
+                  <a href="/rental-of-property/" class="more-button">Узнать подробнее</a>
+              </div>
+              <div class="service-icon-wrapper">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_housing.png" alt="Rental Housing" class="service-icon">
+              </div>
+          </div>
       </div>
-      <div class="services-item">
-        <div class="text-container">
-          <h4 class="service-name">Аренда авто</h4>
-          <p class="service-description">Организуем аренду транспорта любого класса</p>
-          <a href="/rent-a-car/" class="more-button">Узнать подробнее</a>
-        </div>
-        <div class="service-icon-wrapper">
-          <img src="/wp-content/themes/newwave/img/icons/service_icon_transport.png" alt="Transport rental" class="service-icon">
-        </div>
+      <div class="services-item-wrapper">
+          <div class="services-item">
+              <div class="text-container">
+                  <h4 class="service-name">Аренда авто</h4>
+                  <p class="service-description">Организуем аренду транспорта любого класса</p>
+                  <a href="/rent-a-car/" class="more-button">Узнать подробнее</a>
+              </div>
+              <div class="service-icon-wrapper">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_transport.png" alt="Transport rental" class="service-icon">
+              </div>
+          </div>
       </div>
-      <div class="services-item">
-        <div class="text-container">
-          <h4 class="service-name">Трансфер</h4>
-          <p class="service-description">Трансфер в любую локацию для корпоративных поездок</p>
-          <a href="/transfer/" class="more-button">Узнать подробнее</a>
-        </div>
-        <div class="service-icon-wrapper">
-          <img src="/wp-content/themes/newwave/img/icons/service_icon_transfer.png" alt="Transfer" class="service-icon">
-        </div>
+      <div class="services-item-wrapper">
+          <div class="services-item">
+              <div class="text-container">
+                  <h4 class="service-name">Трансфер</h4>
+                  <p class="service-description">Трансфер в любую локацию для корпоративных поездок</p>
+                  <a href="/transfer/" class="more-button">Узнать подробнее</a>
+              </div>
+              <div class="service-icon-wrapper">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_transfer.png" alt="Transfer" class="service-icon">
+              </div>
+          </div>
       </div>
-      <div class="services-item">
-        <div class="text-container">
-          <h4 class="service-name">Туры</h4>
-          <p class="service-description">Создадим для вас незабываемые воспоминания о Пхукете</p>
-          <a href="/tours/" class="more-button">Узнать подробнее</a>
-        </div>
-        <div class="service-icon-wrapper">
-          <img src="/wp-content/themes/newwave/img/icons/service_icon_food.png" alt="Food" class="service-icon">
-        </div>
+      <div class="services-item-wrapper">
+          <div class="services-item">
+              <div class="text-container">
+                  <h4 class="service-name">Туры</h4>
+                  <p class="service-description">Создадим для вас незабываемые воспоминания о Пхукете</p>
+                  <a href="/tours/" class="more-button">Узнать подробнее</a>
+              </div>
+              <div class="service-icon-wrapper">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_food.png" alt="Food" class="service-icon">
+              </div>
+          </div>
       </div>
   </div>
 </section>
@@ -403,20 +446,25 @@ $(document).ready(function() {
 </section>
 <section class="articles-section">
     <div class="article-wrapper">
-    <?php
-      $latest_post_ids = [];
-      $articles = new WP_Query(array(
-          'category_name' => 'articles',
-          'posts_per_page' => 1,
-      ));
-      if ($articles->have_posts()) {
-          while ($articles->have_posts()) {
-            array_push($latest_post_ids, get_the_ID());
-            $articles->the_post();
-              get_template_part('template-parts/post/article-card');
-          }
-      }
-    ?>
+        <div class="article-image-wrapper">
+            <div class="article-image">
+	            <?php
+	            $latest_post_ids = [];
+	            $articles = new WP_Query(array(
+		            'category_name' => 'articles',
+		            'posts_per_page' => 1,
+	            ));
+	            if ($articles->have_posts()) {
+		            while ($articles->have_posts()) {
+			            array_push($latest_post_ids, get_the_ID());
+			            $articles->the_post();
+			            get_template_part('template-parts/post/article-card');
+		            }
+	            }
+	            ?>
+            </div>
+
+        </div>
     <div class="article-content-container">
       <h2 class="title"><span class="color">Откройте ворота</span><br>в экзотический мир</h2>
       <p class="text-m">

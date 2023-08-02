@@ -328,9 +328,6 @@ section:not(.main-section, .quiz-section, .articles-section) {
 }
 
 .main-section .services-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-top: 46px;
 }
 
@@ -343,14 +340,14 @@ section:not(.main-section, .quiz-section, .articles-section) {
   justify-content: space-between;
   background-color: #fff;
   color: #111;
-  margin-right: 7px;
-  margin-left: 7px;
   padding: 20px 24px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   max-width: 282px;
 }
+
+
 
 .main-section .text-container {
   width: 174px;
@@ -500,27 +497,37 @@ section:not(.main-section, .quiz-section, .articles-section) {
   justify-content: space-between;
 }
 
+.article-image-wrapper {
+  background: linear-gradient(to top, #111, transparent);
+  display: flex;
+  border-radius: 20px;
+}
+
+.article-image {
+  display: flex;
+}
+
 .article-card-wrapper {
   display: flex;
 }
 
 .article-card {
+  background: linear-gradient(to top, #111, transparent);
   cursor: pointer;
   display: flex;
   align-items: end;
   padding: 24px;
-  background-image: url("../img/IMG_2753.JPG");
   background-size: cover;
   width: 500px;
   border-radius: 10px;
 }
 
 .article-content-container {
-  width: 632px;
+  margin-left: 24px;
 }
 
 .article-content-container .title {
-  margin-bottom: 48px;
+  margin-bottom: 16px;
 }
 
 .article-content-container .color {
@@ -559,12 +566,6 @@ section:not(.main-section, .quiz-section, .articles-section) {
   font-weight: 400;
   font-size: 14px;
   color: #e2e3e3;
-}
-
-.learn-more-button-wrapper {
-  margin-left: auto;
-  display: flex;
-  align-items: end;
 }
 
 .learn-more-button {
@@ -728,7 +729,7 @@ section:not(.main-section, .quiz-section, .articles-section) {
 }
 
 .support-form-section .text-s {
-  margin: 42px 0;
+  margin: 24px 0;
 }
 
 .support-form {
@@ -879,6 +880,59 @@ input[type="submit"]:active {
 }
 
 @media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: clamp(20px, 7vw, 45px);
+    font-weight: 600;
+    width: 100%;
+    letter-spacing: -1px;
+  }
+
+  .main-section>div:not(.services-container), .header, .reviews-wrapper {
+    padding: 0 32px;
+  }
+
+  .main-section .main-heading .title {
+    font-size: clamp(24px, 6.5vw, 60px);
+    font-weight: 700;
+  }
+  .main-section .selector-heading, .main-section .main-subheading .subheading {
+    font-size: clamp(18px, 4.5vw, 40px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .category-text {
+    font-size: clamp(14px, 2.2vw, 20px);
+  }
+
+  .header .nav-container, .header .header-socials-container, .header .language {
+    display: none;
+  }
+  .header_menu {
+    display: flex;
+  }
+  .related-articles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .article-content-container {
+    margin-left: 0;
+  }
+
+  .main-section .main-subheading .subheading-description {
+    max-width: 650px;
+    font-size: max(12px, 2vw);
+    margin-top: 16px;
+  }
+
+  .support-form-section .contacts-wrapper .title {
+    display: none;
+  }
 
   .mood-container {
     width: 100%;
@@ -961,15 +1015,18 @@ input[type="submit"]:active {
     width: 100%;
     letter-spacing: -1px;
   }
+
   .main-section .main-heading .title {
     font-size: clamp(24px, 6.5vw, 60px);
     font-weight: 700;
   }
+
   .main-section .selector-heading, .main-section .main-subheading .subheading {
     font-size: clamp(18px, 4.5vw, 40px);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
+
   .category-text {
     font-size: clamp(14px, 2.2vw, 20px);
   }
@@ -977,30 +1034,33 @@ input[type="submit"]:active {
   .header .nav-container, .header .header-socials-container, .header .language {
     display: none;
   }
+
   .header_menu {
     display: flex;
   }
+
   .related-articles-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   .main-section .main-subheading .subheading-description {
     max-width: 650px;
     font-size: max(12px, 2vw);
     margin-top: 16px;
   }
-  }
+}
   
-  .service-icon-wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  right: 0;
-  top: 0;
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 64px 0;
   }
-  
-  @media screen and (max-width: 760px) {
+
+  .main-section>div:not(.services-container), .header, .reviews-wrapper {
+    padding: 0 16px;
+  }
+
   .slider-nav {
     display: none;
   }
@@ -1011,7 +1071,13 @@ input[type="submit"]:active {
     width: 100%;
     max-width: 480px;
   }
-  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -1100,71 +1166,6 @@ input[type="submit"]:active {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media screen and (max-width: 1024px) {
-.title {
-  font-size: clamp(20px, 7vw, 45px);
-  font-weight: 600;
-  width: 100%;
-  letter-spacing: -1px;
-}
-.main-section .main-heading .title {
-  font-size: clamp(24px, 6.5vw, 60px);
-  font-weight: 700;
-}
-.main-section .selector-heading, .main-section .main-subheading .subheading {
-  font-size: clamp(18px, 4.5vw, 40px);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-.category-text {
-  font-size: clamp(14px, 2.2vw, 20px);
-}
-
-.header .nav-container, .header .header-socials-container, .header .language {
-  display: none;
-}
-.header_menu {
-  display: flex;
-}
-.related-articles-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main-section .main-subheading .subheading-description {
-  max-width: 650px;
-  font-size: max(12px, 2vw);
-  margin-top: 16px;
-}
-}
-
-.service-icon-wrapper {
-width: 100%;
-height: 100%;
-position: relative;
-right: 0;
-top: 0;
-}
-
-@media screen and (max-width: 800px) {
-.slider-nav {
-  display: none;
-}
-.main-section .mood-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 480px;
-}
-}
-
-@media screen and (max-width: 1170px) {
-  .wrapper {
-    padding: 60px 32px;
-  }
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

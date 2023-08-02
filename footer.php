@@ -2,8 +2,39 @@
 <footer class="footer">
       <section class="support-form-section">
         <div class="support-form-container">
+            <div class="request-wrapper">
+                <div class="request-container">
+                    <h2 class="title">Leave a request</h2>
+                    <p class="text">Contact us in any convenient way by phone, in messengers: WhatsApp, Telegram,
+                        Facebook or using the
+                        feedback form.</p>
+                    <div class="contacts-link-wrapper">
+                        <img src="img/icons/phone_icon.png" alt="" class="contacts-icon">
+                        <a href="" class="contacts-link">Thailand +66-99-999-9999</a>
+                    </div>
+                    <div class="contacts-container">
+                        <div class="contacts-link-wrapper">
+                            <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
+                            <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</a>
+                        </div>
+                        <div class="contacts-link-wrapper">
+                            <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
+                            <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Рус)</a>
+                        </div>
+                        <div class="contacts-link-wrapper">
+                            <img src="/wp-content/themes/newwave/img/icons/mail_icon.png" alt="" class="contacts-icon">
+                            <a href="mailto:newwave.dreamstour@gmail.com" class="contacts-link">newwave.dreamstour@gmail.com</a>
+                        </div>
+                        <div class="contacts-link-wrapper">
+                            <img src="/wp-content/themes/newwave/img/icons/location_icon.png" alt="" class="contacts-icon">
+                            <p class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</p>
+                        </div>
+                    </div>
+                    <a href="" class="mail_link">newwave@mail.ru</a>
+                </div>
+            </div>
           <div class="contacts-wrapper">
-            <h2 class="title">Наши контакты</h2>
+            <h2 class="title">Customer support</h2>
             <div class="contacts-container">
               <div class="contacts-link-wrapper">
                 <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
@@ -73,11 +104,11 @@
           <div>
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-              <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</p>
+              <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</a>
             </div>
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-              <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Рус)</p>
+              <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Рус)</a>
             </div>
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/mail_icon.png" alt="" class="contacts-icon">
