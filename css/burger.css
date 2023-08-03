@@ -1,0 +1,25 @@
+
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .menu {
+    display: none; /* Hide the menu by default */
+    position: absolute; /* Add absolute positioning for menu positioning */
+    top: 40px;
+    right: 0;
+    min-width: 250px;
+    width: 100%;
+    background-color: #FFF;
+  }
+  
+  .menu li {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .menu a {
+    color: #000;
+    text-decoration: none;
+  }

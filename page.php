@@ -19,7 +19,6 @@ get_header();
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            min-width: 1170px;
             width: 100%;
             height: 968px;
             position: absolute;

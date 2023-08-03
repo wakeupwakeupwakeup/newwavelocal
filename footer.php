@@ -23,7 +23,7 @@
                         </div>
                         <div class="contacts-link-wrapper">
                             <img src="/wp-content/themes/newwave/img/icons/location_icon.png" alt="" class="contacts-icon">
-                            <p class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</p>
+                            <span class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</span>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
               </div>
               <div class="contacts-link-wrapper">
                 <img src="/wp-content/themes/newwave/img/icons/location_icon.png" alt="" class="contacts-icon">
-                <p class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</p>
+                <span class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</span>
               </div>
             </div>
             <div class="contact-links-container">
@@ -62,15 +62,6 @@
             <div class="support-form">
             <?php echo do_shortcode('[contact-form-7 id="144" title="Контактная форма 1"]') ?>
             </div>
-            <!--
-            <form action="" class="support-form">
-              <input type="text" name="name" id="name" placeholder="Имя" class="support-form-input">
-              <input type="text" name="telegram" id="telegram" placeholder="Telegram" class="support-form-input">
-              <input type="text" name="phone" id="phone" placeholder="Телефон" class="support-form-input">
-              <input type="text" name="message" id="message" placeholder="Сообщение" class="support-form-input">
-              <input type="submit" name="submit" value="Отправить" class="support-form-submit">
-            </form>
-            -->
           </div>
         </div>
       </section>
@@ -107,14 +98,13 @@
             </div>
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/location_icon.png" alt="" class="contacts-icon">
-              <p class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</p>
+              <span class="contacts-link">9/41 Сакху, район Таланг, Пхукет 83110</span>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   <?php wp_footer(); ?>
 </body>
 </div>

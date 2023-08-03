@@ -2,9 +2,6 @@
 get_header();
 ?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-
 <script>
   
 $(document).ready(function() {
@@ -39,138 +36,6 @@ $(document).ready(function() {
     $('html,body').animate({
         scrollTop: destination.offset().top+50
     },'slow');
-  }
-
-  function getPagesSliderSettings(){
-    return {
-      speed: 350,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      variableWidth: true,
-      infinite: true,
-      arrows: false,
-      responsive: [
-    {
-      breakpoint: 1200, // 910
-      settings: {
-        mobileFirst: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    },
-    {
-      breakpoint: 910,
-      settings: {
-        mobileFirst: true,
-        centerMode: true,
-        centerPadding: "0",
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }],
-    }
-  }
-
-  function getServicesSliderSettings(show_num){
-    return {
-      speed: 350,
-      slidesToShow: show_num,
-      slidesToScroll: 3,
-      prevArrow: '#services_slider_left',
-      nextArrow: '#services_slider_right',
-      infinite: true,
-      responsive: [{
-      breakpoint: 1920,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 1220,
-      settings: {
-        variableWidth: true,
-        centerMode: true,
-        centerPadding: "0",
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        infinite: true,
-        variableWidth: true,
-        centerMode: true,
-        centerPadding: "0",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }],
-    }
-  }
-
-  function getReviewsSliderSettings(){
-    return {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      speed: 350,
-      prevArrow: '#reviews_slider_left',
-      nextArrow: '#reviews_slider_right',
-      responsive: [{
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 1050,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }],
-    }
-  }
-
-  function getRelatedArticlesSliderSettings() {
-      return {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          speed: 350,
-          arrows: false,
-          responsive: [
-              {
-                  breakpoint: 1280,
-                  settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      variableWidth: true,
-                      centerMode: true,
-                      centerPadding: "0",
-                  }
-              },
-              {
-                  breakpoint: 460,
-                  settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      variableWidth: true,
-                      centerMode: true,
-                      centerPadding: "0",
-                  }
-              }],
-      }
   }
 
   function updateServices(cur_mood) {
@@ -468,7 +333,7 @@ $(document).ready(function() {
             }
         }
       ?>
-  </div>
+    </div>
   </div>
 </section>
 <section class="reviews-section">
