@@ -2,7 +2,7 @@
 /**
  * Template part for displaying services.
  */
-
+ // the_permalink();
 ?>
 <a href="<?php the_permalink(); ?>">
   <div class="slider-card" id="service-<?php the_ID() ?>">

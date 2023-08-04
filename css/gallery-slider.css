@@ -1,0 +1,56 @@
+.service-photo-gallery-container {
+    width: 490px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add the styles for the custom arrow icons */
+  .icon-arrow-left,
+  .icon-arrow-right {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+  .icon-arrow-left {
+    margin-right: 10px;
+  }
+  
+  /* Add styles for the thumbnails */
+  .lSSlideOuter .lSPager.lSGallery {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lSSlideOuter .lSPager.lSGallery .lSGalleryItem {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 2px solid #ccc;
+    flex-grow: 1;
+  }
+
+  
+  /* Adjust the thumbnail image size */
+  .lSSlideOuter .lSPager.lSGallery .lSGalleryItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

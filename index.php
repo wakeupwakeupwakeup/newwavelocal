@@ -5,7 +5,6 @@ get_header();
 <script>
   
 $(document).ready(function() {
-
   updateServices('nature');
   updateMoodTexts('#51da06', 'nature');
 
@@ -167,50 +166,6 @@ $(document).ready(function() {
       </button>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
-    <defs>
-      <filter id="svg_romance_hover">
-        <feColorMatrix type="matrix" values="1 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 1 0" />
-        <feComponentTransfer color-interpolation-filters="sRGB">
-          <feFuncR type="table" tableValues="0 0.89" />
-          <feFuncG type="table" tableValues="0 0.1" />
-          <feFuncB type="table" tableValues="0 0.1" />
-        </feComponentTransfer>
-      </filter>
-      <filter id="svg_extreme_hover">
-        <feColorMatrix type="matrix" values="1 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 1 0" />
-        <feComponentTransfer color-interpolation-filters="sRGB">
-          <feFuncR type="table" tableValues="1 1" />
-          <feFuncG type="table" tableValues="0.5647 0.5647" />
-          <feFuncB type="table" tableValues="0 0" />
-        </feComponentTransfer>
-      </filter>
-      <filter id="svg_culture_hover">
-        <feColorMatrix type="matrix" values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0   0 0 0 1 0" />
-        <feComponentTransfer color-interpolation-filters="sRGB">
-          <feFuncR type="table" tableValues="0 0.12156862745098039 0.12156862745098039" />
-          <feFuncG type="table" tableValues="0.8431372549019608 0.8431372549019608 0.8431372549019608" />
-          <feFuncB type="table" tableValues="1 1 1" />
-        </feComponentTransfer>
-      </filter>
-      <filter id="svg_nature_hover">
-        <feColorMatrix type="matrix" values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0   0 0 0 1 0" />
-        <feComponentTransfer color-interpolation-filters="sRGB">
-          <feFuncR type="table" tableValues="0.3176470588235294 0.3176470588235294 0.3176470588235294" />
-          <feFuncG type="table" tableValues="0.8549019607843137 0.8549019607843137 0.8549019607843137" />
-          <feFuncB type="table" tableValues="0.023529411764705882 0.023529411764705882 0.023529411764705882" />
-        </feComponentTransfer>
-      </filter>
-      <filter id="svg_luxury_hover">
-        <feColorMatrix type="matrix" values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0   0 0 0 1 0" />
-        <feComponentTransfer color-interpolation-filters="sRGB">
-          <feFuncR type="table" tableValues="1 1 1" />
-          <feFuncG type="table" tableValues="0.8941176470588236 0.8941176470588236 0.8941176470588236" />
-          <feFuncB type="table" tableValues="0 0 0" />
-        </feComponentTransfer>
-      </filter>
-    </defs>
-  </svg>
   <div class="main-subheading">
     <h3 class="subheading">Нет ничего невозможного</h3>
     <p class="subheading-description">
@@ -329,7 +284,7 @@ $(document).ready(function() {
         if ($articles->have_posts()) {
             while ($articles->have_posts()) {
               $articles->the_post();
-                get_template_part('template-parts/post/related-article-card');
+              get_template_part('template-parts/post/related-article-card');
             }
         }
       ?>

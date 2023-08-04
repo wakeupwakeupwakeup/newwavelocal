@@ -297,7 +297,10 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  /* color: #056CF2; */
+}
+
+.slider-title .category-text {
+  color: #056CF2;
 }
 
 .mood-text {
@@ -540,6 +543,7 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
 }
 
 .offers-section .slider-card {
+  cursor: pointer;
   margin: 0 8px;
   width: 374px;
   color: #111;

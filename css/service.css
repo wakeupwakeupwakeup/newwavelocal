@@ -1,16 +1,55 @@
-.service-background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #0c1f29;
-    z-index: 1;  
+
+.mood_romantic_color {
+    color: #e31a1a;
+}
+
+.mood_extreme_color {
+    color: #ff9000;
+}
+
+.mood_luxury_color {
+    color: #ffe400;
+}
+
+.mood_nature_color {
+    color: #51da06;
+}
+
+.mood_culture_color {
+    color: #1fd7ff;
 }
 
 .service-wrapper {
-    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
     max-width: 1170px;
+    margin: 0 3%;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    /* background-color: #444444; */
+}
+
+.service-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-video-container {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
 }
 
 .service {
@@ -24,6 +63,7 @@
 .service-content-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .service-left, .service-right {
@@ -32,12 +72,57 @@
     flex-direction: column;
 }
 
+.service-right {
+    align-items: center;
+}
+
+/* 
+.service-content-container .service-left {
+    background-color: blueviolet;
+}
+
+.service-content-container .service-right {
+    background-color: rgb(64, 226, 43);
+}
+*/
+
+.service-short-description, .service-full-description {
+    margin: 3% 0;
+    font-size: 20px;
+}
+
+.service-full-description p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.service-full-description li {
+    display: list-item;
+}
+
+.service-full-description ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    padding-left: 25px;
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 9% 0;
+    /* padding: 9% 5%; */
+}
+
 .service-name {
-    font-size: 32px;
+    font-size: 45px;
+    color: #056CF2;
 }
 
 .service-info-list {
-    margin: 24px 0;
+    margin: 7% 0;
 }
 
 .service-info-text {
@@ -45,27 +130,27 @@
 }
 
 .service-info-item {
-    font-size: 18px;
+    font-size: 25px;
+    color: #056CF2;
 }
 
-.service-info-list .service-info-color, .service-price-before, .service-price-after {
-    font-size: 20px;
+.service-info-list .service-info-color, .service-price-normal, .service-price-discount {
+    font-size: 30px;
 }
 
-.service-price-before {
+.service-info-item .service-info-color, .service-info-item .service-price-normal {
+    color: #FFF;
+}
+
+.service-price-discount {
     text-decoration: line-through;
-    text-decoration-color: red;
+    text-decoration-color: #a9a9a9;
+    color: #a9a9a9;
 }
 
 .service-extras-description, .service-advantages-description {
     font-size: 20px;
     font-weight: 500;
-}
-
-.service-photo-gallery-container {
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .expand-photo-wrapper {
@@ -99,9 +184,77 @@
     display: flex;
 }
 
+.order-button {
+    border: none;
+    background-color: #1153fc;
+    cursor: pointer;
+    color: #FFF;
+    padding: 5% 3%;
+    margin: 3% 0;
+    width: 50%;
+    max-width: 245px;
+    min-width: 200px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.order-button:active {
+    background-color: #4274f3;
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.header-mood-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mood-icon {
+    width: 35px;
+}
+
+.header-mood-wrapper .mood-name {
+    font-size: 24px;
+    width: auto;
+}
+
 @media screen and (max-width: 1024px) {
     .service-content-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    .service-left, .service-right {
+        width: 100%;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .service-name {
+        font-size: 28px !important;
+    }
+    .service-short-description {
+        font-size: 16px;
+    }
+    .service-full-description {
+        font-size: 16px;
+    }
+    .service-info-item {
+        font-size: 20px;
+    }
+    .service-info-list .service-info-color, .service-price-normal, .service-price-discount {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .close-icon {
+        width: 30px;
+    }
 }
