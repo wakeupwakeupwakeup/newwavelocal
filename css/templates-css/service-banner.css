@@ -1,0 +1,35 @@
+
+.banner {
+    margin: 0 30px;
+  }
+
+  .banner {
+    color: #FFF;
+  }
+  
+  .banner-container {
+    width: 610px;
+  }
+  
+  .banner-wrapper {
+    background: url("/wp-content/themes/newwave/img/banner_bg.png") no-repeat center left;
+    background-blend-mode: darken;
+    border-radius: 15px;
+    padding: 64px 48px;
+  }
+  
+  
+@media screen and (max-width: 768px) { 
+    .banner-container {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .banner-wrapper {
+        padding: 32px 24px;
+    }
+    .banner {
+        margin: 0 15px;
+    }
+}  

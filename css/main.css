@@ -139,7 +139,7 @@ body {
   -ms-overflow-style: none;
 }
 
-p {
+p, label {
   font-family: Montserrat, sans-serif;
 }
 
@@ -159,6 +159,9 @@ a {
   color: #fff;
 }
 
+a:not(.more-button, .general-button, .related-article-link, .glink):hover {
+  text-decoration: underline;
+}
 
 button.mood-item {
   display: flex;
@@ -264,7 +267,7 @@ button.mood-item {
 	opacity: 1;
 }
 
-section:not(.main-section, .quiz-section, .articles-section, .page) {
+section:not(.main-section, .quiz-section, .articles-section, .page, .banner) {
   padding-top: 94px;
 }
 
@@ -463,7 +466,7 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
 .main-section .services-item {
   margin: 0 6px;
   user-select: none;
-  cursor: pointer;
+  cursor: grab;
   width: 282px;
   min-width: 282px;
   display: flex;
@@ -475,6 +478,10 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
   -moz-border-radius: 15px;
   border-radius: 15px;
   max-width: 282px;
+}
+
+.main-section .services-item:active {
+  cursor: grabbing;
 }
 
 .main-section .text-container {
@@ -770,6 +777,7 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
 }
 
 .review-card {
+  cursor: grab;
   margin: 0 13px;
   display: flex;
   flex-direction: column;
@@ -778,6 +786,10 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
   color: #111;
   padding: 32px;
   border-radius: 10px;
+}
+
+.review-card:active {
+  cursor: grabbing;
 }
 
 .review-content {
@@ -884,7 +896,7 @@ section:not(.main-section, .quiz-section, .articles-section, .page) {
 }
 */
 
-input, textarea {
+.support-form-section input, .support-form-section textarea {
   width: 100%;
   background-color: transparent;
   padding: 20px 16px;
@@ -892,22 +904,23 @@ input, textarea {
   border-radius: 10px;
   margin-top: 8px;
   margin-bottom: 8px;
+  font-size: 16px;
   font-weight: normal;
   color: #FFFFFF;
   resize: none;
 }
 
-input::placeholder, textarea::placeholder {
-  font-size: 16px;
+.support-form-section textarea {
+  height: 200px;
+}
+
+.support-form-section input::placeholder, .support-form-section textarea::placeholder {
+  font-size: 16px !important;
   font-weight: normal;
   color: #a7dafa;
 }
 
-input[name="your-message"] {
-  height: 128px;
-}
-
-input[type="submit"] {
+.support-form-section button[type="submit"] {
   min-width: 100%;
   font-weight: 500;
   font-size: 20px;
@@ -918,17 +931,44 @@ input[type="submit"] {
   border-radius: 10px;
 }
 
-input[type="submit"]:active {
+.support-form-section button[type="submit"]:active {
   background-color: #2d61e8;
 }
 
+.wpforms-field-limit-text {
+  display: none;
+}
+
+.wpforms-recaptcha-container {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.wpforms-field-label {
+  padding: 0;
+}
+
+.wpforms-hidden, .wpforms-label-hide {
+  display: none;
+}
+
+.wpforms-confirmation-container {
+color: #61ed61;
+margin: 3% 0;
+}
+
 /* Поле с ошибкой */
-.wpcf7-not-valid {
+input.wpforms-error, textarea.wpforms-error {
   border-color: #ff0039;
 }
 
+input.wpforms-error::placeholder, textarea.wpforms-error::placeholder {
+  color: #ff0039;
+}
+
 /* Текст с ошибкой */
-.wpcf7-not-valid-tip, .wpcf7-response-output {
+em.wpforms-error {
   font-size: 16px;
   color: #ff0039;
   width: 100%;
@@ -1018,21 +1058,6 @@ input[type="submit"]:active {
     height: inherit !important;
 }
 
-.banner {
-  margin: 0 30px;
-}
-
-
-.banner-container {
-  width: 610px;
-}
-
-.banner-wrapper {
-  background: url("/wp-content/themes/newwave/img/banner_bg.png") no-repeat center left;
-  border-radius: 15px;
-  padding: 64px 48px;
-}
-
 .header .navbar {
   display: none;
 }
@@ -1096,9 +1121,6 @@ input[type="submit"]:active {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
-  .category-text {
-    font-size: clamp(14px, 2.2vw, 20px);
-  }
 
   .header .nav-container, .header .main-socials, .header .main-language {
     display: none;
@@ -1128,7 +1150,7 @@ input[type="submit"]:active {
 
   .mood-container {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }  .mood-item {
     margin-right: 0;
   }
@@ -1216,7 +1238,7 @@ input[type="submit"]:active {
   }
 
   .category-text {
-    font-size: clamp(14px, 2.2vw, 20px);
+    font-size: clamp(14px, 3vw, 20px);
   }
   
   .header .nav-container, .header .main-socials, .header .main-language {
@@ -1267,23 +1289,11 @@ input[type="submit"]:active {
     width: 100%;
   }
   
-  .banner-wrapper {
-    padding: 32px 24px;
-  }
   .page-title {
     margin: 0;
   }
-  .banner-container {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-  }
-  section:not(.main-section, .quiz-section, .articles-section, .page) {
+  section:not(.main-section, .quiz-section, .articles-section, .page, .banner) {
     padding-top: 40px;
-  }
-  .banner {
-    margin: 0 15px;
   }
   .article-wrapper .header, .page-wrapper .header {
     flex-direction: column;

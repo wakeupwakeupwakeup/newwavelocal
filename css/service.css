@@ -119,10 +119,11 @@
 .service-name {
     font-size: 45px;
     color: #056CF2;
+    margin-bottom: 3%;
 }
 
 .service-info-list {
-    margin: 7% 0;
+    margin: 4% 0 0 0;
 }
 
 .service-info-text {
@@ -130,8 +131,9 @@
 }
 
 .service-info-item {
-    font-size: 25px;
+    font-size: 30px;
     color: #056CF2;
+    margin: 10px 0;
 }
 
 .service-info-list .service-info-color, .service-price-normal, .service-price-discount {
@@ -189,7 +191,7 @@
     background-color: #1153fc;
     cursor: pointer;
     color: #FFF;
-    padding: 5% 3%;
+    padding: 4% 3%;
     margin: 3% 0;
     width: 50%;
     max-width: 245px;
@@ -231,6 +233,9 @@
     }
     .service-left, .service-right {
         width: 100%;
+    }
+    .service-photo-gallery-container {
+        width: 80vw;
     }
 
 }

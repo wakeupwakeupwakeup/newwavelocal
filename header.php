@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://newwave-tour.com/">
     <meta property="og:image" content="https://newwave-tour.com/wp-content/uploads/2023/07/IMG_2976.jpg">
 
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" href="/wp-content/themes/newwave/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/wp-content/themes/newwave/css/normalize.css">
     <link rel="stylesheet" href="/wp-content/themes/newwave/css/main.css">
     <link rel="stylesheet" href="/wp-content/themes/newwave/css/burger.css">
+    <link rel="stylesheet" href="/wp-content/themes/newwave/css/templates-css/service-banner.css">
 
     <script>
       function toggleMenu() {
@@ -37,14 +38,15 @@
         return {
           speed: 350,
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 1,
           variableWidth: true,
-          infinite: true,
+          infinite: false,
           arrows: false,
           responsive: [
         {
           breakpoint: 1200, // 910
           settings: {
+            infinite: true,
             mobileFirst: true,
             slidesToShow: 3,
             slidesToScroll: 3
@@ -53,6 +55,7 @@
         {
           breakpoint: 910,
           settings: {
+            infinite: true,
             mobileFirst: true,
             centerMode: true,
             centerPadding: "0",
@@ -127,7 +130,9 @@
             variableWidth: false,
             centerMode: false,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 10000,
           }
         }],
         }
@@ -152,13 +157,15 @@
                       }
                   },
                   {
-                      breakpoint: 460,
+                      breakpoint: 580,
                       settings: {
                           slidesToShow: 1,
                           slidesToScroll: 1,
                           variableWidth: true,
                           centerMode: true,
                           centerPadding: "0",
+                          autoplay: true,
+                          autoplaySpeed: 10000,
                       }
                   }],
           }
@@ -221,7 +228,7 @@
           <ul class="nav">
             <li class="nav-item"><a href="/" class="nav-link" id="link_main">Главная страница</a></li>
             <li class="nav-item"><a href="/about-us/" class="nav-link" id="link_about_us">О Нас</a></li>
-            <li class="nav-item"><a href="/articles/" class="nav-link" id="link_blog">Блог</a></li>
+            <li class="nav-item"><a href="/category/articles/" class="nav-link" id="link_blog">Блог</a></li>
             <li class="nav-item"><a href="#" onclick="contactsClick()" class="nav-link" id="link_footer">Контакты</a></li>
           </ul>
         </nav>
@@ -243,7 +250,7 @@
           <ul>
             <li class="nav-item"><a href="/" class="nav-link" id="link_main">Главная страница</a></li>
             <li><a href="/about-us/" class="nav-link" id="link_about_us">О Нас</a></li>
-            <li><a href="/articles/" class="nav-link" id="link_blog">Блог</a></li>
+            <li><a href="/category/articles/" class="nav-link" id="link_blog">Блог</a></li>
             <li><a href="#" onclick="contactsClick()" class="nav-link" id="link_footer">Контакты</a></li>
           </ul>
           <div class="burger-language">

@@ -1,8 +1,8 @@
 <script>
   function order(){
-    const destination = $(".footer");
+    const destination = $(".support-form-wrapper");
     $('html,body').animate({
-        scrollTop: destination.offset().top+50
+        scrollTop: destination.offset().top-50
     },'slow');
   }
 </script>

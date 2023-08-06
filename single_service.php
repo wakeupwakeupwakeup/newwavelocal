@@ -2,8 +2,8 @@
     get_header();
 ?>
 
-<link rel="stylesheet" href="/wp-content/themes/newwave/css/service.css">
 <link rel="stylesheet" href="/wp-content/themes/newwave/css/gallery-slider.css">
+<link rel="stylesheet" href="/wp-content/themes/newwave/css/service.css">
 <link type="text/css" rel="stylesheet" href="/wp-content/themes/newwave/css/lightslider.min.css" />                  
 <script src="/wp-content/themes/newwave/js/lightslider.min.js"></script>
 
@@ -22,27 +22,33 @@ var slider = $("#photos_slider").lightSlider({
             gallery: true,
             item: 1,
             loop: true,
-            slideMargin: 0,
+            slideMargin: 10,
             thumbItem: 3,
             adaptiveHeight: true,
             controls: true,
             prevHtml: '<span class="icon-arrow-left"></span>',
-            nextHtml: '<span class="icon-arrow-right"></span>',
-            responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                thumbItem: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                thumbItem: 2
-                }
-            }
-            ]
+            nextHtml: '<span class="icon-arrow-right"></span>'
         });
+    const photosWrapper = $('.service-photo-gallery-wrapper')
+    $( window ).resize(function() {
+        update_gallery($(document).width());
+    });
+
+    $(document).ready(function() {
+        update_gallery($(document).width());
+    });
+
+    function update_gallery(window_width) {
+        if (window_width < 1008) {
+            const service_heading = $('.service-heading');
+            photosWrapper.appendTo(service_heading);
+            var childrenElements = service_heading.children();
+            var targetElement = childrenElements.eq(0);
+            targetElement.after(photosWrapper);
+        } else {
+            photosWrapper.appendTo($('.service-right'));
+        }
+    }
 </script>
 
 <?php 

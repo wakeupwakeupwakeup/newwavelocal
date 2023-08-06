@@ -31,9 +31,9 @@ $(document).ready(function() {
   });
 
   function scrollToFooter(){
-    const destination = $(".footer");
+    const destination = $(".support-form-wrapper");
     $('html,body').animate({
-        scrollTop: destination.offset().top+50
+        scrollTop: destination.offset().top-50
     },'slow');
   }
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
             mood: cur_mood,
         },
         success: function(response) {
-            slider_container.fadeIn('slow');
+            slider_container.fadeIn('fast');
             slider_container.slick('unslick');
             slider_container.empty();
             slider_container.append(response);
@@ -181,7 +181,7 @@ $(document).ready(function() {
                   <a href="/rental-of-property/" class="more-button">Узнать подробнее</a>
               </div>
               <div class="service-icon-wrapper">
-                  <img src="/wp-content/themes/newwave/img/icons/service_icon_housing.png" alt="Rental Housing" class="service-icon">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_housing.png" alt="Аренда жилья" class="service-icon">
               </div>
           </div>
       </div>
@@ -193,7 +193,7 @@ $(document).ready(function() {
                   <a href="/rent-a-car/" class="more-button">Узнать подробнее</a>
               </div>
               <div class="service-icon-wrapper">
-                  <img src="/wp-content/themes/newwave/img/icons/service_icon_transport.png" alt="Transport rental" class="service-icon">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_transport.png" alt="Аренда авто" class="service-icon">
               </div>
           </div>
       </div>
@@ -205,7 +205,7 @@ $(document).ready(function() {
                   <a href="/transfer/" class="more-button">Узнать подробнее</a>
               </div>
               <div class="service-icon-wrapper">
-                  <img src="/wp-content/themes/newwave/img/icons/service_icon_transfer.png" alt="Transfer" class="service-icon">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_transfer.png" alt="Трансфер" class="service-icon">
               </div>
           </div>
       </div>
@@ -217,7 +217,19 @@ $(document).ready(function() {
                   <a href="/tours/" class="more-button">Узнать подробнее</a>
               </div>
               <div class="service-icon-wrapper">
-                  <img src="/wp-content/themes/newwave/img/icons/service_icon_tours.png" alt="Tours" class="service-icon">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_tours.png" alt="Туры" class="service-icon">
+              </div>
+          </div>
+      </div>
+      <div class="services-item-wrapper">
+          <div class="services-item">
+              <div class="text-container">
+                  <h4 class="service-name">Документы</h4>
+                  <p class="service-description">Мы поможем вам со всеми документами</p>
+                  <a href="/documents/" class="more-button">Узнать подробнее</a>
+              </div>
+              <div class="service-icon-wrapper">
+                  <img src="/wp-content/themes/newwave/img/icons/service_icon_docs.png" alt="Документы" class="service-icon">
               </div>
           </div>
       </div>

@@ -11,11 +11,11 @@
                     <div class="contacts-container">
                         <div class="contacts-link-wrapper">
                             <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-                            <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</a>
+                            <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Рус)</a>
                         </div>
                         <div class="contacts-link-wrapper">
                             <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-                            <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Рус)</a>
+                            <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Англ)</a>
                         </div>
                         <div class="contacts-link-wrapper">
                             <img src="/wp-content/themes/newwave/img/icons/mail_icon.png" alt="" class="contacts-icon">
@@ -33,11 +33,11 @@
             <div class="contacts-container">
               <div class="contacts-link-wrapper">
                 <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-                <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</a>
+                <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Рус)</a>
               </div>
               <div class="contacts-link-wrapper">
                 <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-                <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Рус)</a>
+                <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Англ)</a>
               </div>
               <div class="contacts-link-wrapper">
                 <img src="/wp-content/themes/newwave/img/icons/mail_icon.png" alt="" class="contacts-icon">
@@ -60,7 +60,7 @@
             Заполните форму обратной связи, чтобы мы могли вам перезвонить, уточнить детали вашего запроса и предложить варианты организации лучшего времяпровождения
             </p>
             <div class="support-form">
-            <?php echo do_shortcode('[contact-form-7 id="144" title="Контактная форма 1"]') ?>
+            <?php echo do_shortcode('[wpforms id="180" title="false"]') ?>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="footer-logo-wrapper">
               <img src="/wp-content/themes/newwave/img/logo.png" alt="logo" class="logo">
             </div>
-            <span class="footer-text">Copyright 2023. All rights reserved.<br>Website design by MKT Team</span>
+            <span class="footer-text">Copyright 2023. All rights reserved.<br><a href="https://pavlovmkt.com" target="_blank" rel="nofollow">Website design by MKT Team</a></span>
           </div>
           <div class="footer-menu-column">
             <a href="/rental-of-property/" class="footer-menu-item">Аренда жилья</a>
@@ -86,11 +86,11 @@
           <div class="footer-info">
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-              <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Англ)</a>
+              <a href="tel:66-94-773-0408" class="contacts-link">+66 94-773-0408 (Рус)</a>
             </div>
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/phone_icon.png" alt="" class="contacts-icon">
-              <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Рус)</a>
+              <a href="tel:66-99-387-5233" class="contacts-link">+66 99-387-5233 (Англ)</a>
             </div>
             <div class="contacts-link-wrapper">
               <img src="/wp-content/themes/newwave/img/icons/mail_icon.png" alt="" class="contacts-icon">

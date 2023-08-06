@@ -12,6 +12,7 @@
     min-width: 250px;
     width: 100%;
     background-color: #FFF;
+    z-index: 1;
   }
   
   .menu li {

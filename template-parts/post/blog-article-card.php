@@ -1,9 +1,9 @@
 <a href="<?php the_permalink(); ?>" class="related-article-link">
-        <div class="related-card-wrapper" id="article-<?php the_ID() ?>">
+        <div class="blog-card-wrapper" id="article-<?php the_ID() ?>">
             <?php 
                 if (has_post_thumbnail()) {
                     $thumbnail_attributes = array(
-                    'class' => 'related-card-img',
+                    'class' => 'blog-card-img',
                     'alt' => '',
                     );
                     the_post_thumbnail('related-article-card-thumbnail', $thumbnail_attributes);
